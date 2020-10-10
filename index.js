@@ -16,8 +16,8 @@ function currentLine(line){
   if(line.length===0){
     return "The line is currently empty";
   }
-  var s=`The line is currently: `;
-  for(let i=0;i<line.length;i++){
+  var s=`The line is currently: 1. ${name}`;
+  for(let i=1;i<line.length;i++){
     s.concat(`, ${i+1}. ${line[i]}`)
   }
   return s;
