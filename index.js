@@ -18,8 +18,10 @@ function currentLine(line){
   }
   else{
     var s=`The line is currently: 1. ${line[0]}`;
-    for(let i=1;i<line.length;i++){
-      s.concat(`, ${i+1}. ${line[i]}`)
+    if (line.length>1){
+      for(let i=1;i<line.length;i++){
+        s.concat(`, ${i+1}. ${line[i]}`)
+      }
     }
   }
   return s;
