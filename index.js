@@ -20,4 +20,5 @@ function currentLine(line){
   for(let i=0;i<line.length;i++){
     s.concat(`, ${i+1}. ${line[i]}`)
   }
+  return s;
 }
